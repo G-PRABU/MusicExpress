@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Music Express</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_title">Music Express</string>
+    <string name="album_id_key">id</string>
+    <string name="album_songs_title">Album Songs</string>
+    <string name="album_activity_title">Albums</string>
+    <string name="permission_title">Please Grant Permission.</string>
+    <string name="permission_message">External Storage Access Permission is Required.</string>
+    <string name="permission_positive">OK</string>
+    <string name="permission_negative">Cancel</string>
+    <string name="access_permission_text">Please give storage access permission to get songs from memory.</string>
+    <string name="access_permission_button">Access</string>
+    <string name="permission_toast">Please give storage access permission.</string>
+    <string name="empty_list_home">Your device does not have any songs.</string>
+</resources>

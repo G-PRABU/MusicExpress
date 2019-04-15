@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/album_song_controls"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="65dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_music" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/music_ic"
+            android:layout_width="44dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:background="#eee">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_music" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/album_current_song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/album_current_song_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/album_play_pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:padding="8dp"
+            android:src="@drawable/ic_play" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/album_previous_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_skip_previous" />
+
+        <ImageButton
+            android:id="@+id/album_play_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:src="@drawable/ic_play_circle" />
+
+        <ImageButton
+            android:id="@+id/album_next_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_skip_next" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <TextView
+        android:id="@+id/empty_list_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/empty_list_home"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/access_permission_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:text="@string/access_permission_text"/>
+
+        <Button
+            android:id="@+id/access_permission_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/side_nav_bar"
+            android:text="@string/access_permission_button"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <include layout="@layout/song_controls" />
+
+</android.support.design.widget.CoordinatorLayout>
